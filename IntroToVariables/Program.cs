@@ -22,3 +22,10 @@ double thisIsADouble = 12.4;
 // Decimals have a "m" at the end of the number
 decimal thisIsADecimal = 12.4m;
 
+
+// Char and string are "character" and "word" types:
+
+// Char uses ' '
+char thisIsAChar = 'a';
+// string uses " "
+string thisIsAString = "A";
