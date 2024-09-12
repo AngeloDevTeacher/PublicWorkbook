@@ -12,6 +12,8 @@
 
 // ints are whole numbers
 int thisIsAnInt = 12;
+//int companySalesRevenue = 5300000.12;
+//double westCoastSalesPercentage = 43.0;
 
 // Floats have a "f" at the end of the number.
 float thisIsAFloat = 12.4f;

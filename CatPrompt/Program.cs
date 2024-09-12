@@ -11,6 +11,9 @@
 // - Optional: We can assign it a value to start.
 // **********************************************************
 
+// Make a user input variable
+string userInput = "";
+
 // Declare nameOfPerson as String
 string nameOfPerson = string.Empty;
 // Declare amountOfCats as Integer
@@ -28,11 +31,15 @@ amountOfCats = 0;
 
 // Prompt "Please enter your name: " nameOfPerson
 Console.Write("Please enter your name: ");
-nameOfPerson = Console.ReadLine();
+userInput = Console.ReadLine();
+
+// If I had some processing, I could do it before setting the value of nameOfPerson
+nameOfPerson = userInput.Trim();
 
 // Prompt "Please enter a whole number for the amount of cats you have: " amountOfCats
 Console.Write("Please enter a whole number for the amount of cats you have: ");
-amountOfCats = int.Parse(Console.ReadLine());
+userInput = Console.ReadLine();
+amountOfCats = int.Parse(userInput);
 
 // Display nameOfPerson " has " amountOfCats "cat(s)"
 Console.WriteLine($"{nameOfPerson} has {amountOfCats} cat(s)!");
