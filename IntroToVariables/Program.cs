@@ -29,3 +29,11 @@ decimal thisIsADecimal = 12.4m;
 char thisIsAChar = 'a';
 // string uses " "
 string thisIsAString = "A";
+
+// Booleans are true/false values:
+bool thisIsABoolean = true;
+bool thisIsAFalseBoolean = false;
+
+// Finally there is the null value! It can exist on certain types.
+string thisIsANulledString = null;
+
