@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicMath", "BasicMath\Basi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirlScoutCookies", "GirlScoutCookies\GirlScoutCookies.csproj", "{EAFBADEE-28A6-4C3F-BAE1-B4F8E0108AF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RightAngleTriangle", "RightAngleTriangle\RightAngleTriangle.csproj", "{AA21D9BC-99CB-4570-A13B-3D542A131ABB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{EAFBADEE-28A6-4C3F-BAE1-B4F8E0108AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAFBADEE-28A6-4C3F-BAE1-B4F8E0108AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAFBADEE-28A6-4C3F-BAE1-B4F8E0108AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA21D9BC-99CB-4570-A13B-3D542A131ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA21D9BC-99CB-4570-A13B-3D542A131ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA21D9BC-99CB-4570-A13B-3D542A131ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA21D9BC-99CB-4570-A13B-3D542A131ABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
