@@ -5,7 +5,17 @@
 /// </summary>
 /// 
 
-double height = 0;
+// Variables
 double width = 0;
+double height = 0;
+
 
 double hypotenuse = 0;
+
+// Display Program Purpose
+Console.WriteLine("===== Hypotenuse Calculator =====");
+Console.WriteLine();
+
+// Prompt for our variables:
+Console.Write("Enter the width of the triangle: ");
+width = double.Parse(Console.ReadLine());
