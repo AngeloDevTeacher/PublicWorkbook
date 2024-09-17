@@ -19,3 +19,6 @@ Console.WriteLine();
 // Prompt for our variables:
 Console.Write("Enter the width of the triangle: ");
 width = double.Parse(Console.ReadLine());
+
+Console.Write("Enter the height of the triangle: ");
+height = double.Parse(Console.ReadLine());
