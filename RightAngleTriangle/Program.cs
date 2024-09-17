@@ -24,9 +24,9 @@ Console.Write("Enter the height of the triangle: ");
 height = double.Parse(Console.ReadLine());
 
 // Set the value of the hypotenuse to the formula.
-hypotenuse = Math.Sqrt( Math.Pow(width,2) + Math.Pow(height,2) );
+hypotenuse = Math.Sqrt( Math.Pow(width, 2) + Math.Pow(height, 2) );
 
 // Output the result. If I round in the output I keep the accurate value in memory in case I have logic later.
 Console.WriteLine();
-Console.WriteLine($"The hypotenuse is {Math.Round(hypotenuse,5)}");
+Console.WriteLine($"The hypotenuse is {Math.Round(hypotenuse, 5)}");
 Console.WriteLine("END OF PROGRAM");
