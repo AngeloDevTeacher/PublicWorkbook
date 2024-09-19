@@ -32,5 +32,7 @@ userInput = Console.ReadLine();
 costPerCookie = double.Parse(userInput);
 
 // DO MATH - calculate the totalCost
+totalCost = amountOfCookies * costPerCookie;
 
 // Display totalCost
+Console.WriteLine(totalCost);
