@@ -31,3 +31,32 @@ number3 = double.Parse(Console.ReadLine());
 outputNumber = (number1 + number2 + number3) / 3;
 // Output display
 Console.WriteLine($"The average of the numbers is: {outputNumber:#,##0.00}");
+
+/// <summary>
+/// Create a program that will sum the digits of a 3 digit number.
+/// Author: Angelo Encarnacion
+/// Date Modified: 2024-09-19
+/// </summary>
+
+int numberInput = 0;
+
+int hundredsNumber = 0;
+int tensNumber = 0;
+int onesNumber = 0;
+
+int sum = 0;
+
+// Dipsplay Purpose
+
+// Prompt Input
+Console.Write("Enter a 3 digit whole number:\t");
+numberInput = int.Parse(Console.ReadLine());
+
+// Divide by place
+hundredsNumber = numberInput / 100;
+tensNumber = (numberInput - (hundredsNumber * 100)) / 10;
+onesNumber = (numberInput - ((hundredsNumber * 100) + (tensNumber * 10)));
+// Add places
+sum = hundredsNumber + tensNumber + onesNumber;
+// Output
+Console.WriteLine($"{numberInput} -> {sum}");
