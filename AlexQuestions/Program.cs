@@ -27,7 +27,7 @@ userInput = Console.ReadLine();
 amountOfCookies = int.Parse(userInput);
 
 // Prompt for cost per cookie
-Console.Write("Enter in a cost per cookie:\t");
+Console.Write($"Enter in a cost per cookie (you have {amountOfCookies}):\t");
 userInput = Console.ReadLine();
 costPerCookie = double.Parse(userInput);
 
@@ -35,4 +35,4 @@ costPerCookie = double.Parse(userInput);
 totalCost = amountOfCookies * costPerCookie;
 
 // Display totalCost
-Console.WriteLine(totalCost);
+Console.WriteLine($"I have {amountOfCookies} that cost {totalCost:c}! Isn't that neat?");
