@@ -7,11 +7,11 @@
 
 
 // Variables
-int number1 = 0;
-int number2 = 0;
-int number3 = 0;
+double number1 = 0;
+double number2 = 0;
+double number3 = 0;
 
-int outputNumber = 0;
+double outputNumber = 0;
 
 // Main Program
 
@@ -19,13 +19,13 @@ int outputNumber = 0;
 Console.WriteLine("Mean Average Calculator");
 // Prompt
 Console.Write("Enter in the first whole real number:\t");
-number1 = int.Parse(Console.ReadLine());
+number1 = double.Parse(Console.ReadLine());
 
 Console.Write("Enter in the second whole real number:\t");
-number2 = int.Parse(Console.ReadLine());
+number2 = double.Parse(Console.ReadLine());
 
 Console.Write("Enter in the third whole real number:\t");
-number3 = int.Parse(Console.ReadLine());
+number3 = double.Parse(Console.ReadLine());
 
 // Calculate
 outputNumber = (number1 + number2 + number3) / 3;
