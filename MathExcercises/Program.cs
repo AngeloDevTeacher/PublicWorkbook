@@ -30,4 +30,4 @@ number3 = double.Parse(Console.ReadLine());
 // Calculate
 outputNumber = (number1 + number2 + number3) / 3;
 // Output display
-Console.WriteLine("The average of the numbers is: " + outputNumber);
+Console.WriteLine($"The average of the numbers is: {outputNumber:#,##0.00}");
