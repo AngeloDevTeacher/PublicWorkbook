@@ -38,7 +38,7 @@ Console.WriteLine($"The average of the numbers is: {outputNumber:#,##0.00}");
 /// Date Modified: 2024-09-19
 /// </summary>
 
-int numberInput = 0;
+int myNumberInput = 0;
 
 int hundredsNumber = 0;
 int tensNumber = 0;
@@ -50,13 +50,13 @@ int sum = 0;
 
 // Prompt Input
 Console.Write("Enter a 3 digit whole number:\t");
-numberInput = int.Parse(Console.ReadLine());
+myNumberInput = int.Parse(Console.ReadLine());
 
 // Divide by place
-hundredsNumber = numberInput / 100;
-tensNumber = (numberInput - (hundredsNumber * 100)) / 10;
-onesNumber = (numberInput - ((hundredsNumber * 100) + (tensNumber * 10)));
+hundredsNumber = myNumberInput / 100;
+tensNumber = (myNumberInput - (hundredsNumber * 100)) / 10;
+onesNumber = (myNumberInput - ((hundredsNumber * 100) + (tensNumber * 10)));
 // Add places
 sum = hundredsNumber + tensNumber + onesNumber;
 // Output
-Console.WriteLine($"{numberInput} -> {sum}");
+Console.WriteLine($"{myNumberInput} -> {sum}");
