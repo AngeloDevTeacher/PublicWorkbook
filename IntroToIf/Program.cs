@@ -55,3 +55,18 @@ else
 {
     Console.WriteLine("Dude. Just get something from the fridge, I guess.");
 }
+
+string studentName = "Angelo";
+
+switch (studentName)
+{
+    case "Angelo":
+        Console.WriteLine("HAHA I'M OT A STUDENT");
+        break;
+
+    case "Alex G":
+        Console.WriteLine("I've been picked on!");
+        break;
+    default:
+        break;
+}
