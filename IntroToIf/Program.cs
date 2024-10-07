@@ -68,5 +68,6 @@ switch (studentName)
         Console.WriteLine("I've been picked on!");
         break;
     default:
+        Console.WriteLine("WTF");
         break;
 }
