@@ -16,6 +16,7 @@
 
 // variable types are set before using.
 int studentID = 0;
+bool validID = false;
 
 
 // I can't change type of variable, it must store the tyoe declared.
@@ -24,16 +25,35 @@ int studentID = 0;
 
 // The try keyword says to try this until you get an error (An exception).
 // If you get an exception, go do things in the catch block.
-try
-{
-    // Brandon tip: be specific to the user for what you expect.
-    Console.Write("What is your student ID number?\t");
-    // When I prompt a user, I get a string value back!!!!!
-    // We need to try to parse this to make it a int number.
-    studentID = int.Parse(Console.ReadLine());
 
-    Console.WriteLine(studentID);
-} catch (Exception e)
+while (validID == false)
 {
-    Console.WriteLine("You did not enter a good student id.");
+    try
+    {
+        // Brandon tip: be specific to the user for what you expect.
+        Console.Write("What is your student ID number?\t");
+        // When I prompt a user, I get a string value back!!!!!
+        // We need to try to parse this to make it a int number.
+        studentID = int.Parse(Console.ReadLine());
+        if (studentID > 0)
+        {
+            // I've checked to see if the number is "good" (positive)
+            validID = true;
+        }
+        else
+        {
+            // The number is <1, and is not valid. Make a message, then DO NOT set validId to true.
+            Console.WriteLine("Please enter a value GREATER than 0");
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("You did not enter a good student id.");
+        // This is what your computer gets.
+        //Console.WriteLine(ex.ToString());
+        // This is a friendly message.
+        //Console.WriteLine(ex.Message);
+    }
 }
+// I moved the output OUTSIDE of the loop because I wanted to only see it once.
+Console.WriteLine(studentID);
