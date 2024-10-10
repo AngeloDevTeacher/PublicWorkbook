@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToIf", "IntroToIf\Intr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decisions1", "Decisions1\Decisions1.csproj", "{93E97ED8-442B-4206-B779-918F6F977C07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToLoops", "IntroToLoops\IntroToLoops.csproj", "{B3A7DC14-EC67-4A8E-BB80-47F32612F5CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToLoops", "IntroToLoops\IntroToLoops.csproj", "{B3A7DC14-EC67-4A8E-BB80-47F32612F5CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops1", "Loops1\Loops1.csproj", "{8F7FC3E2-C04E-4EFB-8879-89710CADA7B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loops1", "Loops1\Loops1.csproj", "{8F7FC3E2-C04E-4EFB-8879-89710CADA7B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToExceptions", "IntroToExceptions\IntroToExceptions.csproj", "{D03CB7C1-D9A0-40CF-8E5E-8A76F92B3416}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,10 @@ Global
 		{8F7FC3E2-C04E-4EFB-8879-89710CADA7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F7FC3E2-C04E-4EFB-8879-89710CADA7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F7FC3E2-C04E-4EFB-8879-89710CADA7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03CB7C1-D9A0-40CF-8E5E-8A76F92B3416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03CB7C1-D9A0-40CF-8E5E-8A76F92B3416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03CB7C1-D9A0-40CF-8E5E-8A76F92B3416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03CB7C1-D9A0-40CF-8E5E-8A76F92B3416}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
