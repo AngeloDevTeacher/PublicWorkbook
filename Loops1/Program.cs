@@ -1,7 +1,7 @@
 ﻿/// <summary>
 /// Purpose: Calculate the sum of squares from 1 to the inputted number.
 /// Author: Angelo Encarnacion
-/// Date Modified: 2024-10-8 
+/// Date Modified: 2024-10-10 
 /// </summary>
 
 string userInput = "";
