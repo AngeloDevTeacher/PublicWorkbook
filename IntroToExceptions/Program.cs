@@ -22,10 +22,18 @@ int studentID = 0;
 // The commented line below will not work.
 //studentID = "34";
 
+// The try keyword says to try this until you get an error (An exception).
+// If you get an exception, go do things in the catch block.
+try
+{
+    // Brandon tip: be specific to the user for what you expect.
+    Console.Write("What is your student ID number?\t");
+    // When I prompt a user, I get a string value back!!!!!
+    // We need to try to parse this to make it a int number.
+    studentID = int.Parse(Console.ReadLine());
 
-Console.Write("What is your student ID number?\t");
-// When I prompt a user, I get a string value back!!!!!
-// We need to try to parse this to make it a int number.
-studentID = int.Parse(Console.ReadLine());
-
-Console.WriteLine(studentID);
+    Console.WriteLine(studentID);
+} catch (Exception e)
+{
+    Console.WriteLine("You did not enter a good student id.");
+}
