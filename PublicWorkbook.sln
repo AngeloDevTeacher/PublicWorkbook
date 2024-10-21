@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToArrays", "IntroToArr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays1", "Arrays1\Arrays1.csproj", "{7CAB4313-BF60-468D-A371-F7ECFB220909}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays06b", "Arrays06b\Arrays06b.csproj", "{A1B6E7A4-1E98-45F9-AE44-229770D940EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays06b", "Arrays06b\Arrays06b.csproj", "{A1B6E7A4-1E98-45F9-AE44-229770D940EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz2Prep", "Quiz2Prep\Quiz2Prep.csproj", "{7C33BAB0-1C73-4F4C-9F85-982FA1F75047}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +133,10 @@ Global
 		{A1B6E7A4-1E98-45F9-AE44-229770D940EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1B6E7A4-1E98-45F9-AE44-229770D940EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1B6E7A4-1E98-45F9-AE44-229770D940EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C33BAB0-1C73-4F4C-9F85-982FA1F75047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C33BAB0-1C73-4F4C-9F85-982FA1F75047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C33BAB0-1C73-4F4C-9F85-982FA1F75047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C33BAB0-1C73-4F4C-9F85-982FA1F75047}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
