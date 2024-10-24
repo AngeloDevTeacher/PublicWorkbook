@@ -27,7 +27,7 @@ string typeOfPet = ""; // My only valid answers will be "c" or "d".
 
 Random randomInstance = new Random();
 double addtionalCostPerMonth = randomInstance.Next(3000, 5001)/100.00; // Lets say I had to calculate between $30 and 50
-//Console.WriteLine( $"{addtionalCostPerMonth:c}"); // Currency format!
+Console.WriteLine( $"{addtionalCostPerMonth:c}"); // Currency format!
 
 const double CatLicenseCost = 20.00;
 const double DogLicenseCost = 120.00;
@@ -58,19 +58,47 @@ do
         else
         {
             Console.WriteLine("You entered something that was not \"C\" or \"D\".");
+            validInput = false;
         }
     }
     catch (Exception)
     {
         Console.WriteLine("ERROR: Please enter a valid option.");
+        validInput = false;
     }
-
-
 } while (!validInput);
+
 validInput = false;
 // Months with pet
 do
 {
+    try
+    {
+        Console.Write("Please enter in a number of months:\t");
+        userInput = Console.ReadLine(); 
 
+        amountOfMonths = int.Parse(userInput);
+
+        // What do we need to process?
+        // negative numbers!
+        if (amountOfMonths < 0)
+        {
+            Console.WriteLine("USER ERROR: Please enter a positive number of months.");
+            validInput = false;
+        }
+        else
+        {
+            validInput = true;
+        }
+    }
+    catch (Exception)
+    {
+        // I will catch:
+        // Strings (invalid)
+        // blank spaces
+        // decimals
+        Console.WriteLine("You didn't enter in a positive whole number for months!");
+        validInput = false;
+    }
 } while (!validInput);
 // End Program
