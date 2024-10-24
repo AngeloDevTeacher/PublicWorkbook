@@ -8,7 +8,7 @@
 // General Plan :
 // ✔️Calculate random
 // ✔️Init variables
-// Loop-Prompt the user, until I get valid answers
+// ✔️Loop-Prompt the user, until I get valid answers
 // Calc:
 // - License costs PER FULL YEAR
 // - Misc cost per month
@@ -27,7 +27,7 @@ string typeOfPet = ""; // My only valid answers will be "c" or "d".
 
 Random randomInstance = new Random();
 double addtionalCostPerMonth = randomInstance.Next(3000, 5001)/100.00; // Lets say I had to calculate between $30 and 50
-Console.WriteLine( $"{addtionalCostPerMonth:c}"); // Currency format!
+//Console.WriteLine( $"{addtionalCostPerMonth:c}"); // Currency format!
 
 const double CatLicenseCost = 20.00;
 const double DogLicenseCost = 120.00;
@@ -38,6 +38,10 @@ const double FoodRateFromEightYearsToTwelve = 1200.00;
 const double FoodRatePerMonthAdditional = 20.00;
 
 bool validInput = false;
+
+double foodCostTotal = 0;
+double petLicenseTotal = 0;
+double miscCostTotal = 0;
 
 // Main Program
 // Program purpose
@@ -101,4 +105,61 @@ do
         validInput = false;
     }
 } while (!validInput);
+
+// Calculate
+// License Cost
+switch (typeOfPet)
+{
+    case "C":
+        petLicenseTotal = CatLicenseCost + ((amountOfMonths / 12) * CatLicenseCost);
+        break;
+    case "D":
+        petLicenseTotal = DogLicenseCost + ((amountOfMonths / 12) * DogLicenseCost);
+        break;
+    default:
+        break;
+}
+//Console.WriteLine($"{petLicenseTotal:c}");
+
+
+// misc cost
+miscCostTotal = addtionalCostPerMonth * amountOfMonths;
+//Console.WriteLine($"{miscCostTotal:c}");
+
+if (amountOfMonths < 24)
+{
+    foodCostTotal = FoodRateUnderTwoYears;
+}
+else if (amountOfMonths >= 24 && amountOfMonths <= 96)
+{
+    foodCostTotal = FoodRateFromTwoYearsToEight;
+}
+else if (amountOfMonths >= 97 && amountOfMonths <= 144)
+{
+    foodCostTotal = FoodRateFromEightYearsToTwelve;
+}
+else // amountOfMonths > 144
+{
+    foodCostTotal = FoodRateFromEightYearsToTwelve + (FoodRatePerMonthAdditional * amountOfMonths);
+}
+
+// Display totals:
+Console.WriteLine();
+
+switch (typeOfPet)
+{
+    case "C":
+        Console.WriteLine($"Pet License Cost: {CatLicenseCost:c} + {amountOfMonths / 12} * {CatLicenseCost}");
+        break;
+    case "D":
+        Console.WriteLine($"Pet License Cost: {DogLicenseCost:c} + {amountOfMonths / 12} * {DogLicenseCost}");
+        break;
+    default:
+        break;
+}
+Console.WriteLine("--------------------------");
+Console.WriteLine($"{"Pet License",-18}{petLicenseTotal,8:$##0.00}");
+Console.WriteLine($"{"Misc Cost",-18}{miscCostTotal,8:$##0.00}");
+Console.WriteLine($"{"Food Cost",-18}{foodCostTotal,8:$##0.00}");
+
 // End Program
