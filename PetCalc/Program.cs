@@ -6,8 +6,8 @@
 /// 
 
 // General Plan :
-// Calculate random
-// Init variables
+// ✔️Calculate random
+// ✔️Init variables
 // Loop-Prompt the user, until I get valid answers
 // Calc:
 // - License costs PER FULL YEAR
@@ -22,6 +22,7 @@
 
 // Variables
 int amountOfMonths = 0;
+string userInput = "";
 string typeOfPet = ""; // My only valid answers will be "c" or "d".
 
 Random randomInstance = new Random();
@@ -35,6 +36,41 @@ const double FoodRateUnderTwoYears = 500.00;
 const double FoodRateFromTwoYearsToEight = 900.00;
 const double FoodRateFromEightYearsToTwelve = 1200.00;
 const double FoodRatePerMonthAdditional = 20.00;
-// Main Program
 
+bool validInput = false;
+
+// Main Program
+// Program purpose
+Console.WriteLine("==== Pet Calc ====");
+// Pet type
+do
+{
+    try
+    {
+        // Prompt Pattern:
+        Console.Write("Please enter in [C] for cat, or [D] for dog:\t");
+        userInput = Console.ReadLine(); // Save in user input so I can process cleanly.
+        if (userInput.ToUpper()[0] == 'C' || userInput.ToUpper()[0] == 'D')
+        {
+            typeOfPet = userInput.ToUpper()[0].ToString();
+            validInput = true;
+        }
+        else
+        {
+            Console.WriteLine("You entered something that was not \"C\" or \"D\".");
+        }
+    }
+    catch (Exception)
+    {
+        Console.WriteLine("ERROR: Please enter a valid option.");
+    }
+
+
+} while (!validInput);
+validInput = false;
+// Months with pet
+do
+{
+
+} while (!validInput);
 // End Program
