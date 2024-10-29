@@ -14,3 +14,39 @@ double GetTotal()
 
     return output;
 }
+
+// Helper method: GetCoin
+int GetCoin(string textCoinPrompt)
+{
+    int coin = 0;
+	string userInput = "";
+	bool validCoinCount = false;
+	// Prompt pattern, with validation
+	do
+	{
+        try
+        {
+            Console.Write(textCoinPrompt);
+            userInput = Console.ReadLine();
+            coin = int.Parse(userInput);
+            if (coin > 0)
+            {
+                validCoinCount = true;
+            }
+            else
+            {
+                validCoinCount = false;
+                Console.WriteLine("You must enter a positive number.");
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("You must enter a whole number.");
+        }
+    } while (!validCoinCount);
+
+    return coin;
+}
+
+int test = GetCoin("Enter in the amount of pennies\t");
+Console.WriteLine(test);
