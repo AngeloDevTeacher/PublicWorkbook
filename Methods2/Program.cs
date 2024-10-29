@@ -13,12 +13,23 @@ string ExclaimCatName(string temporaryCatNamePlaceholder)
     return temporaryCatNamePlaceholder+"!";
 }
 
-void MakePeanutButterAndJellySandwich(string slice1, string slice2)
-{
-
-}
-
-
 
 Console.WriteLine(ExclaimCatName("Sully"));
 
+
+void SpellUpTo(string word, int number)
+{
+	for (int i = 0; i < number; i++)
+	{
+        Console.WriteLine(word[i]);
+    }
+    
+}
+
+string word = "Example";
+int number = 24;
+SpellUpTo("Kyle M Henderson", 9);
+SpellUpTo("Chris D Malone", 4);
+
+Console.WriteLine(word);
+Console.WriteLine(number);
