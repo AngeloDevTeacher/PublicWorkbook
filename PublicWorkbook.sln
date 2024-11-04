@@ -63,6 +63,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodsWithArrays", "Method
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToWriting", "IntroToWriting\IntroToWriting.csproj", "{9F3FB7D9-0E7C-431F-A2F8-D8D7B7A86828}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinecraftVillagerTracker", "MinecraftVillagerTracker\MinecraftVillagerTracker.csproj", "{1AC7E2A7-B3CA-4286-815F-BDFA684999A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -181,6 +183,10 @@ Global
 		{9F3FB7D9-0E7C-431F-A2F8-D8D7B7A86828}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F3FB7D9-0E7C-431F-A2F8-D8D7B7A86828}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F3FB7D9-0E7C-431F-A2F8-D8D7B7A86828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC7E2A7-B3CA-4286-815F-BDFA684999A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC7E2A7-B3CA-4286-815F-BDFA684999A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC7E2A7-B3CA-4286-815F-BDFA684999A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC7E2A7-B3CA-4286-815F-BDFA684999A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,9 +10,10 @@ writer.Close();
 
 StreamReader reader = new StreamReader($"../../../{fileName}");
 string line; 
-for (int i = 0; i < 6; i++)
+while (!reader.EndOfStream)
 {
     line = reader.ReadLine();
     Console.WriteLine(line);
 }
 reader.Close();
+Console.WriteLine("DONE");
