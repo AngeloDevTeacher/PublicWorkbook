@@ -8,7 +8,7 @@
 // Variables
 bool isProgramRunning = true;
 string userInput = "";
-char menuChoice = '';
+char menuChoice;
 
 // Make a "temp" memory structure - an array
 const int MaxNumberOfVillagers = 25;
@@ -23,7 +23,7 @@ int[] villagerCash = new int[MaxNumberOfVillagers];
 do
 {
     DisplayMenu();
-    MenuPrompt("Choose a menu option");
+    menuChoice =  MenuPrompt("Choose a menu option");
 
     switch (menuChoice)
     {
