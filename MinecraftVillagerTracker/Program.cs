@@ -45,6 +45,12 @@ static void DisplayMenu()
     Console.WriteLine("E[X]it");
 }
 
+static int LoadVillagersFromFile(string fileName, string[] names, string[] jobs, int cash)
+{
+    int output = 0;
+    return output;
+} 
+
 // Grabs a string from the user.
 static string Prompt(string message)
 {
