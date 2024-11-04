@@ -12,3 +12,13 @@ const int MaxNumberOfVillagers = 25;
 string[] villagerNames = new string[MaxNumberOfVillagers];
 string[] villagerJobs = new string[MaxNumberOfVillagers];
 int[] villagerCash = new int[MaxNumberOfVillagers];
+
+// Shows menu options
+static void DisplayMenu()
+{
+    Console.WriteLine("[D]isplay Villagers");
+    Console.WriteLine("[A]dd Villager Data");
+    Console.WriteLine("[R]emove a Villager"); // Might not be done today/might be extra
+    Console.WriteLine("[E]dit a Villager");
+    Console.WriteLine("E[X]it");
+}
