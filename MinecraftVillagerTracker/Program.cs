@@ -8,6 +8,7 @@
 // Variables
 bool isProgramRunning = true;
 string userInput = "";
+char menuChoice = '';
 
 // Make a "temp" memory structure - an array
 const int MaxNumberOfVillagers = 25;
@@ -22,7 +23,15 @@ int[] villagerCash = new int[MaxNumberOfVillagers];
 do
 {
     DisplayMenu();
+    MenuPrompt("Choose a menu option");
 
+    switch (menuChoice)
+    {
+        case 'D':
+            break;
+        default:
+            break;
+    }
 } while (isProgramRunning);
 
 
@@ -36,8 +45,16 @@ static void DisplayMenu()
     Console.WriteLine("E[X]it");
 }
 
+// Grabs a string from the user.
 static string Prompt(string message)
 {
     Console.Write(message+"\t");
     return Console.ReadLine();
+}
+
+// Grabs a menu option from the user.
+static char MenuPrompt(string message)
+{
+    Console.Write(message + "\t");
+    return Console.ReadLine().ToUpper()[0];
 }
