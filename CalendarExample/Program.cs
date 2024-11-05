@@ -6,10 +6,6 @@
 /// 
 
 
-// Do I know how to make a grid?
-
-
-
 // UserInput
 int day = 0;
 int endDate = 31;
@@ -17,7 +13,45 @@ string userInput = "";
 
 userInput = Prompt("Enter the day of week start:\t");
 userInput = userInput.ToLower().Substring(0, 3);
-endDate = PromptInt("Enter a number of days\t");
+//endDate = PromptInt("Enter a number of days\t");
+
+
+
+// How do I know the number of days given a month and year?
+string month = Prompt("Enter month:\t").ToLower().Substring(0,3);
+int year = PromptInt("Enter the year:\t");
+switch (month)
+{
+    case "feb":
+        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+        {
+            endDate = 29;
+        }
+        else
+        {
+            endDate = 28;
+        }
+        break;
+    case "jan":
+    case "mar":
+    case "may":
+    case "jul":
+    case "aug":
+    case "oct":
+    case "dec":
+        endDate = 31;
+        break;
+    case "apr":
+    case "jun":
+    case "sep":
+    case "nov":
+        endDate = 30;
+        break;
+    default:
+        endDate = 31;
+        break;
+}
+
 
 DisplayCalendar(endDate, userInput);
 
