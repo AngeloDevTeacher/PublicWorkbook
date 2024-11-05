@@ -68,7 +68,7 @@ for (int h = Height - 1; h >= 0; h--)
         }
         else if (w > 1)
         {
-            if ((h * 50) > moneyMade[w-1] && ((h - 1) * 50) <= moneyMade[w-1])
+            if ((h * 50) < moneyMade[w-1] && ((h + 1) * 50) > moneyMade[w-1])
             {
                 Console.Write($"${moneyMade[w-1]}\t");
             }
