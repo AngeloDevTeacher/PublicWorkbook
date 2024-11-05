@@ -17,7 +17,35 @@ int endDate = 31;
 string userInput = "";
 
 userInput = Prompt("Enter the day of week start:\t");
+userInput = userInput.ToLower().Substring(0, 3);
 endDate = PromptInt("Enter a number of days\t");
+
+switch (userInput)
+{
+    case "sun":
+        day = 1;
+        break;
+    case "mon":
+        day = 0;
+        break;
+    case "tue":
+        day = -1;
+        break;
+    case "wed":
+        day = -2;
+        break;
+    case "thu":
+        day = -3;
+        break;
+    case "fri":
+        day = -4;
+        break;
+    case "sat":
+        day = -5;
+        break;
+    default:
+        break;
+}
 
 Console.WriteLine("Sun\tMon\tTue\tWed\tThu\tFri\tSat");
 for (int h = 0; h < Height; h++)
@@ -62,6 +90,9 @@ static int PromptInt(string promptMessage)
     return output;
 }
 
+/// <summary>
+/// Prompts the user for a string using the message.
+/// </summary>
 static string Prompt(string promptMessage)
 {
     Console.Write(promptMessage);
