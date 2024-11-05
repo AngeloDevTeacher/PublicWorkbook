@@ -8,8 +8,7 @@
 
 // Do I know how to make a grid?
 
-const int Height = 5;
-const int Width = 7;
+
 
 // UserInput
 int day = 0;
@@ -20,50 +19,67 @@ userInput = Prompt("Enter the day of week start:\t");
 userInput = userInput.ToLower().Substring(0, 3);
 endDate = PromptInt("Enter a number of days\t");
 
-switch (userInput)
+DisplayCalendar(endDate, userInput);
+
+/// <summary>
+/// Displays a calendar with starting on a specific day and having a specific number of days.
+/// </summary>
+static void DisplayCalendar(int numberofDays, string dayStart)
 {
-    case "sun":
-        day = 1;
-        break;
-    case "mon":
-        day = 0;
-        break;
-    case "tue":
-        day = -1;
-        break;
-    case "wed":
-        day = -2;
-        break;
-    case "thu":
-        day = -3;
-        break;
-    case "fri":
-        day = -4;
-        break;
-    case "sat":
-        day = -5;
-        break;
-    default:
-        break;
+    const int Height = 5;
+    const int Width = 7;
+
+    int day = 0;
+    int endDate = 31;
+
+
+    switch (dayStart)
+    {
+        case "sun":
+            day = 1;
+            break;
+        case "mon":
+            day = 0;
+            break;
+        case "tue":
+            day = -1;
+            break;
+        case "wed":
+            day = -2;
+            break;
+        case "thu":
+            day = -3;
+            break;
+        case "fri":
+            day = -4;
+            break;
+        case "sat":
+            day = -5;
+            break;
+        default:
+            break;
+    }
+
+    Console.WriteLine("Sun\tMon\tTue\tWed\tThu\tFri\tSat");
+    for (int h = 0; h < Height; h++)
+    {
+        for (int w = 0; w < Width; w++)
+        {
+            if (day < 1 || day > endDate)
+            {
+                Console.Write(" \t");
+            }
+            else
+            {
+                Console.Write($"{day}\t");
+            }
+            day++;
+        }
+        Console.WriteLine();
+    }
 }
 
-Console.WriteLine("Sun\tMon\tTue\tWed\tThu\tFri\tSat");
-for (int h = 0; h < Height; h++)
-{
-    for (int w = 0; w < Width; w++)
-    {
-        if (day < 1 || day > endDate)
-        {
-            Console.Write(" \t");
-        }
-        else
-        {
-            Console.Write($"{day}\t");
-        }
-        day++;
-    }
-    Console.WriteLine();
-}
+
 
 /// <summary>
 /// Continuously prompts the user for a int value until a valid int is provided.
