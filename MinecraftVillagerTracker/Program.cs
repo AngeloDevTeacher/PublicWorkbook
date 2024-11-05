@@ -28,6 +28,14 @@ do
     switch (menuChoice)
     {
         case 'D':
+            int loadedNumber = LoadVillagersFromFile("villagers.csv", villagerNames, villagerJobs, villagerCash);
+            for (int i = 0; i < loadedNumber; i++)
+            {
+                Console.WriteLine($"{villagerNames[i]}: {villagerJobs[i]}, {villagerCash[i]}");
+            }
+            break;
+        case 'X':
+            isProgramRunning = false;
             break;
         default:
             break;
@@ -45,9 +53,20 @@ static void DisplayMenu()
     Console.WriteLine("E[X]it");
 }
 
-static int LoadVillagersFromFile(string fileName, string[] names, string[] jobs, int cash)
+static int LoadVillagersFromFile(string fileName, string[] names, string[] jobs, int[] cash)
 {
     int output = 0;
+    StreamReader reader = new StreamReader("../../../"+fileName);
+    string line;
+    while (!reader.EndOfStream)
+    {
+        line = reader.ReadLine();
+        string[] items = line.Split(",");
+        names[output] = items[0];
+        jobs[output] = items[1];
+        cash[output] = int.Parse(items[2]);
+        output++;
+    }
     return output;
 } 
 
