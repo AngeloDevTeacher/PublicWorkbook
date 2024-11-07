@@ -68,6 +68,9 @@ static int PromptInt(string message)
 	return output;
 }
 
+/// <summary>
+/// Calculate the average of the inputted numbers in an array.
+/// </summary>
 static double AverageNumber(int[] numbers, int logicalSize)
 {
 	double output = 0;
@@ -78,7 +81,9 @@ static double AverageNumber(int[] numbers, int logicalSize)
 	output /= logicalSize;
     return output;
 }
-
+/// <summary>
+/// Find the lowest number inputted numbers in an array.
+/// </summary>
 static int LowestValue(int[] nums, int count)
 {
 	int output = 0;
