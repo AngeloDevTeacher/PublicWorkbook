@@ -65,9 +65,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToWriting", "IntroToWr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinecraftVillagerTracker", "MinecraftVillagerTracker\MinecraftVillagerTracker.csproj", "{1AC7E2A7-B3CA-4286-815F-BDFA684999A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarExample", "CalendarExample\CalendarExample.csproj", "{F6EB2F8B-B3AE-4D6D-926A-D74285A039BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalendarExample", "CalendarExample\CalendarExample.csproj", "{F6EB2F8B-B3AE-4D6D-926A-D74285A039BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartExample", "ChartExample\ChartExample.csproj", "{CB11A6CB-6440-48BD-8296-32007D5C1C14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChartExample", "ChartExample\ChartExample.csproj", "{CB11A6CB-6440-48BD-8296-32007D5C1C14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedArrays", "AdvancedArrays\AdvancedArrays.csproj", "{DC7464B9-7F3B-41D7-949F-2538EB2AE46B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -199,6 +201,10 @@ Global
 		{CB11A6CB-6440-48BD-8296-32007D5C1C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB11A6CB-6440-48BD-8296-32007D5C1C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB11A6CB-6440-48BD-8296-32007D5C1C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7464B9-7F3B-41D7-949F-2538EB2AE46B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7464B9-7F3B-41D7-949F-2538EB2AE46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7464B9-7F3B-41D7-949F-2538EB2AE46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7464B9-7F3B-41D7-949F-2538EB2AE46B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
