@@ -39,10 +39,9 @@ do
 	}
 } while (numberInput != EndInput && logicalSize < NumberArraySize);
 
-for (int i = 0; i < logicalSize; i++) 
-{
-	Console.WriteLine(numbers[i]);
-}
+Console.WriteLine( AverageNumber(numbers, logicalSize) );
+
+Console.WriteLine( LowestValue(numbers, logicalSize) );
 
 
 
@@ -66,5 +65,32 @@ static int PromptInt(string message)
             Console.WriteLine("Error: Please enter a whole number.");
         }
 	} while (!isValid);
+	return output;
+}
+
+static double AverageNumber(int[] numbers, int logicalSize)
+{
+	double output = 0;
+    for (int i = 0; i < logicalSize; i++)
+    {
+        output += numbers[i];
+    }
+	output /= logicalSize;
+    return output;
+}
+
+static int LowestValue(int[] nums, int count)
+{
+	int output = 0;
+	if (count > 0){
+        output = nums[0];
+		for (int i = 1; i < count; i++) 
+		{
+			if (nums[i] < output)
+			{
+				output = nums[i];
+			}
+		}
+    }
 	return output;
 }
