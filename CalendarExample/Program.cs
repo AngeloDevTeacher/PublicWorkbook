@@ -64,7 +64,7 @@ static void DisplayCalendar(int numberofDays, string dayStart)
     const int Width = 7;
 
     int day = 0;
-    int endDate = 31;
+    int endDate = numberofDays;
 
 
     switch (dayStart)

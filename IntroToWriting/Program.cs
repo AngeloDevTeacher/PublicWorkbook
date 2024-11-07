@@ -1,6 +1,6 @@
 ﻿
 // These are the very basic patterns of reading and writing files.
-string fileName = "test.csv";
+string fileName = "test.angelosave";
 bool appendToFile = true;
 
 StreamWriter writer = new StreamWriter($"../../../{fileName}", appendToFile);

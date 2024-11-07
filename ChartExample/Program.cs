@@ -3,7 +3,7 @@
 
 // Can I make a grid, starting my y and the bottom (or largest y at the top)
 
-const int Height = 12;
+const int Height = 80;
 const int Width = 10;
 
 int place = 1;
@@ -52,6 +52,8 @@ Console.WriteLine();
 Console.WriteLine();
 int[] moneyMade = new int[Width];
 moneyMade[1] = 546;
+moneyMade[2] = 441;
+moneyMade[4] = 2020;
 
 // Put something within the grid system
 for (int h = Height - 1; h >= 0; h--)
