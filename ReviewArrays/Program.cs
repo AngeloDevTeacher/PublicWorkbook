@@ -18,11 +18,14 @@ const int MaxSize = 25;
 
 int[] idNumbers = new int[MaxSize];
 string[] userNames = new string[MaxSize];
+int[,] twoDimentionalArray = new int[MaxSize,MaxSize];
 
 // I can SET elements of the array to a value using the index:
 idNumbers[1] = 32;
 idNumbers[2] = 5 * 2;
 idNumbers[3] = idNumbers[1] + idNumbers[2];
+
+twoDimentionalArray[3, 4] = 12;
 
 // I can read elements of an array using the index:
 Console.WriteLine(idNumbers[1]);
@@ -38,11 +41,17 @@ for (int idx = 0; idx < idNumbers.Length; idx++)
     Console.WriteLine(idNumbers[idx]);
 }
 
+
 static void SetElementToZero(int[] arrayToChange, int indexToChange)
 {
     arrayToChange[indexToChange] = 0;
 }
+
+
+// When I pass in an array as a argument, it changes the original array.
+// (Passed by reference)
 SetElementToZero(idNumbers,5);
+
 for (int idx = 0; idx < idNumbers.Length; idx++)
 {
     Console.WriteLine(idNumbers[idx]);
