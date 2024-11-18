@@ -71,7 +71,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChartExample", "ChartExampl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedArrays", "AdvancedArrays\AdvancedArrays.csproj", "{DC7464B9-7F3B-41D7-949F-2538EB2AE46B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewArrays", "ReviewArrays\ReviewArrays.csproj", "{51FF02F3-A0F2-45E4-B0AD-7A4BB1E28857}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReviewArrays", "ReviewArrays\ReviewArrays.csproj", "{51FF02F3-A0F2-45E4-B0AD-7A4BB1E28857}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateAndTime", "DateTime\DateAndTime.csproj", "{89DC8F93-A44D-42BC-A9A9-84B3B715550F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -211,6 +213,10 @@ Global
 		{51FF02F3-A0F2-45E4-B0AD-7A4BB1E28857}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51FF02F3-A0F2-45E4-B0AD-7A4BB1E28857}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51FF02F3-A0F2-45E4-B0AD-7A4BB1E28857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89DC8F93-A44D-42BC-A9A9-84B3B715550F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89DC8F93-A44D-42BC-A9A9-84B3B715550F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89DC8F93-A44D-42BC-A9A9-84B3B715550F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89DC8F93-A44D-42BC-A9A9-84B3B715550F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
