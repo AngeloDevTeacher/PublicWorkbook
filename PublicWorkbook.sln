@@ -73,9 +73,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedArrays", "AdvancedA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReviewArrays", "ReviewArrays\ReviewArrays.csproj", "{51FF02F3-A0F2-45E4-B0AD-7A4BB1E28857}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateAndTime", "DateTime\DateAndTime.csproj", "{89DC8F93-A44D-42BC-A9A9-84B3B715550F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateAndTime", "DateTime\DateAndTime.csproj", "{89DC8F93-A44D-42BC-A9A9-84B3B715550F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadHeaderCSV", "LoadHeaderCSV\LoadHeaderCSV.csproj", "{8E35DFA5-F23C-47D7-84E4-2DE60559868C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoadHeaderCSV", "LoadHeaderCSV\LoadHeaderCSV.csproj", "{8E35DFA5-F23C-47D7-84E4-2DE60559868C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodReturnIndexOf", "MethodReturnIndexOf\MethodReturnIndexOf.csproj", "{5BFDBA0E-E21F-40EE-A931-0E6231C6437F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -223,6 +225,10 @@ Global
 		{8E35DFA5-F23C-47D7-84E4-2DE60559868C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E35DFA5-F23C-47D7-84E4-2DE60559868C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E35DFA5-F23C-47D7-84E4-2DE60559868C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BFDBA0E-E21F-40EE-A931-0E6231C6437F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFDBA0E-E21F-40EE-A931-0E6231C6437F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFDBA0E-E21F-40EE-A931-0E6231C6437F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFDBA0E-E21F-40EE-A931-0E6231C6437F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
