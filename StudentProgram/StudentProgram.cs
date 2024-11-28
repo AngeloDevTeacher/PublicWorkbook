@@ -1,17 +1,11 @@
 ﻿using StudentExample;
+Console.WriteLine();
+Student angelo = new Student("Angelo","Encarnacion", 100);
 
-Student angelo = new Student();
 
 
+Console.WriteLine(angelo.FirstName);
+Console.WriteLine(angelo.LastName);
+Console.WriteLine(angelo.IdNumber);
 
-try
-{
-    angelo.FirstName = "         A                        ";
-
-    angelo.LastName = "         Encarnacion      ";
-}
-catch (Exception e)
-{
-    Console.WriteLine(e.Message);
-}
-Console.WriteLine(angelo.FullName);
+Console.WriteLine(angelo.ToString());

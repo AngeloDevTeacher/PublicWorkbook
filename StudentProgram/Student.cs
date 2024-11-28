@@ -10,7 +10,8 @@ namespace StudentExample
     {
         string firstName = "";
         string lastName = "";
-        
+        int idNumber;
+
         /// <summary>
         /// Returns the first name.
         /// </summary>
@@ -44,9 +45,26 @@ namespace StudentExample
 
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentNullException("The last name cannot be null");
+                    throw new ArgumentNullException("The last name cannot be null or empty");
                 }
                 lastName = value.Trim();
+            }
+        }
+
+        public int IdNumber
+        {
+            get
+            {
+                return idNumber;
+            }
+            set
+            {
+
+                if (value < 0)
+                {
+                    throw new ArgumentNullException("The id number must be greater than zero.");
+                }
+                idNumber = value;
             }
         }
 
@@ -59,6 +77,19 @@ namespace StudentExample
             {
                 return $"{FirstName} {LastName}";
             }
+        }
+
+
+        public Student(string first, string last, int id)
+        {
+            FirstName = first;
+            LastName = last;
+            IdNumber = id;
+        }
+
+        public override string ToString()
+        {
+            return $"{LastName},{FirstName},{IdNumber}";
         }
     }
 }
