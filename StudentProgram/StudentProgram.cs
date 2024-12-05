@@ -11,6 +11,7 @@ string firstName, lastName;
 int id;
 Console.WriteLine();
 
+
 Console.WriteLine("Student Tracker Display");
 
 do
