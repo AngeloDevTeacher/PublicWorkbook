@@ -15,11 +15,23 @@ double score;
 
 string option;
 
+// Saving pt 1
+
+
 // Program intro
 // I'm lazy not doing it in class
 
-// Make sure you loop here or in prompt to get a valid string for names.
-firstName = Prompt("Please enter first name:\t");
+// Make sure you loop here or in prompt to get a valid string for names. 
+do
+{
+    firstName = Prompt("Please enter first name:\t");
+    if (string.IsNullOrEmpty(firstName))
+    {
+        Console.WriteLine("Please enter in a valid first name");
+    }
+    
+} while (string.IsNullOrEmpty(firstName));
+
 lastName = Prompt("Please enter last name:\t");
 plays = PromptInt("Please enter amount of plays:\t");
 score = PromptDouble("Please enter lifetime score:\t");
