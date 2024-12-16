@@ -16,7 +16,7 @@ double score;
 string option;
 
 // Saving pt 1
-
+string fileName = "../../../playerlist.csv";
 
 // Program intro
 // I'm lazy not doing it in class
@@ -116,4 +116,58 @@ static double PromptDouble(string message)
         }
     } while (valid == false);
     return output;
+}
+
+/// <summary>
+/// Saves the player list into the file.
+/// </summary>
+static void SavePlayerList()
+{
+
+}
+
+
+/// <summary>
+/// Loads the player list from the file.
+/// </summary>
+static void LoadPlayerList(string fileName)
+{
+    StreamReader reader;
+    try
+    {
+        reader = new StreamReader(fileName);
+        string line;
+        while (!reader.EndOfStream)
+        {
+            line = reader.ReadLine();
+
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine("Loading failed. Attempting to create a new file.");
+        CreateNewFile(fileName);
+    }
+}
+
+/// <summary>
+/// Creates a new <see langword="file"/>, or crashes violently.
+/// </summary>
+static void CreateNewFile(string fileName)
+{
+    try
+    {
+        StreamWriter writer = new StreamWriter(fileName);
+        writer.Close();
+    }
+    catch (Exception e)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Cannot create a new file - critical error.");
+        for (int i = 0; i < 10; i++)
+        {
+            Console.Beep();
+        }
+        throw new Exception("I don't know what I'm doing at this point.");
+    }
 }
