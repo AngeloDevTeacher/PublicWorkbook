@@ -122,9 +122,22 @@ static double PromptDouble(string message)
 /// <summary>
 /// Saves the player list into the file.
 /// </summary>
-static void SavePlayerList()
+static void SavePlayerList(string fileName, List<Player> players)
 {
+    try
+    {
+        StreamWriter writer = new StreamWriter(fileName);
+        foreach (Player p in players) 
+        {
+            writer.WriteLine(p.ToString());
+        }
+        writer.Close();
+    }
+    catch (Exception e)
+    {
 
+        Console.WriteLine("Could not save file.");
+    }
 }
 
 
@@ -142,7 +155,7 @@ static void LoadPlayerList(string fileName, List<Player> players)
         {
             line = reader.ReadLine();
             string[] items = line.Split(",");
-            Player thisPlayer = new Player(items[0], items[1], int.Parse(items[2]), double.Parse(items[3]));
+            Player thisPlayer = new Player(items[1], items[0], int.Parse(items[2]), double.Parse(items[3]));
             players.Add(thisPlayer);
         }
     }
