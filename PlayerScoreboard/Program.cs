@@ -17,6 +17,7 @@ string option;
 
 // Saving pt 1
 string fileName = "../../../playerlist.csv";
+List<Player> players = new List<Player>();
 
 // Program intro
 // I'm lazy not doing it in class
@@ -130,7 +131,7 @@ static void SavePlayerList()
 /// <summary>
 /// Loads the player list from the file.
 /// </summary>
-static void LoadPlayerList(string fileName)
+static void LoadPlayerList(string fileName, List<Player> players)
 {
     StreamReader reader;
     try
@@ -140,7 +141,9 @@ static void LoadPlayerList(string fileName)
         while (!reader.EndOfStream)
         {
             line = reader.ReadLine();
-
+            string[] items = line.Split(",");
+            Player thisPlayer = new Player(items[0], items[1], int.Parse(items[2]), double.Parse(items[3]));
+            players.Add(thisPlayer);
         }
     }
     catch (Exception e)
